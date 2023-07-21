@@ -241,6 +241,7 @@ public class Dispatcher implements Closeable {
 
   /** This class keeps track of a scheduled reportedBlock move */
   public class PendingMove {
+    // HubSpot modification: We need to know if moves are done before shutting down.
     private final AtomicReference<MoveState> state = new AtomicReference<>(MoveState.PENDING);
     private DBlock reportedBlock;
     private Source source;
@@ -683,6 +684,7 @@ public class Dispatcher implements Closeable {
       return moveExecutor;
     }
 
+    // HubSpot Modification: We create our own DDataNodes, so we need to be able to shut them down
     public synchronized void shutdownMoveExecutor() {
       if (moveExecutor != null) {
         moveExecutor.shutdown();
@@ -1403,6 +1405,7 @@ public class Dispatcher implements Closeable {
     }
   }
 
+  // HubSpot modification: Perform the equivalent of reset() and then shutDown() when closing.
   @Override
   public void close() throws IOException {
     storageGroupMap.clear();
