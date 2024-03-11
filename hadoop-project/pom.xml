@@ -109,7 +109,7 @@
     <bouncycastle.version>1.60</bouncycastle.version>
 
     <!-- Required for testing LDAP integration -->
-    <apacheds.version>2.0.0-M21</apacheds.version>
+    <apacheds.version>2.0.0.AM28-SNAPSHOT</apacheds.version>
     <ldap-api.version>1.0.0-M33</ldap-api.version>
 
     <!-- Apache Commons dependencies -->
