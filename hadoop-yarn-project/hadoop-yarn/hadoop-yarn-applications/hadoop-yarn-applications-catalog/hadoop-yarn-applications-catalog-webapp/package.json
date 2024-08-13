@@ -17,7 +17,7 @@
     "devDependencies": {
         "requirejs": "^2.1.0",
         "shelljs": "^0.8.0",
-        "apidoc": "0.55.0"
+        "apidoc": "1.2.0"
     },
     "scripts": {
         "prestart": "npm install & mvn clean package",
