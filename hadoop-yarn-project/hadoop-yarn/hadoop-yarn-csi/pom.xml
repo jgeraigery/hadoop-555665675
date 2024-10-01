@@ -26,8 +26,8 @@
     <packaging>jar</packaging>
 
     <properties>
-        <protobuf.version>3.25.4</protobuf.version>
-        <grpc.version>1.66.0</grpc.version>
+        <protobuf.version>3.25.5</protobuf.version>
+        <grpc.version>1.68.0</grpc.version>
         <os-maven-plugin.version>1.7.1</os-maven-plugin.version>
     </properties>
 
