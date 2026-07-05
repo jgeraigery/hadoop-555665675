@@ -27,7 +27,7 @@
   <name>Apache Hadoop Maven Plugins</name>
   <properties>
     <maven.dependency.version>3.9.8</maven.dependency.version>
-    <maven.plugin-tools.version>3.13.1</maven.plugin-tools.version>
+    <maven.plugin-tools.version>3.15.2</maven.plugin-tools.version>
   </properties>
   <dependencies>
     <dependency>
